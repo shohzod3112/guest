@@ -1,0 +1,133 @@
+@import './variable';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: $maincolor;
+}
+
+.container{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width: 1440px;
+    width: 50%;
+    margin: 0 auto;
+    @media(max-width:1200px){
+        width: 60%;
+    }
+}
+
+
+@mixin tugma(){
+    padding: 1rem 1.3rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    color: $maincolor;
+    text-align: center;
+    background-color: $titlecolor;
+    &:hover{
+        color: $titlecolor;
+        background-color: $maincolor;
+        cursor: pointer;
+        border: 1px solid $titlecolor;
+    }
+}
+
+@mixin chiziq(){
+    text-align: center;
+    h5{
+        width: 2.5rem;
+        height: 8px;
+        background-color: $chiziqrangi;
+    }
+}
+
+@mixin subtitle(){
+    padding: 2rem 0;
+    display: flex; flex-direction: column; row-gap: 1rem;
+    align-items: center; justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    @media (max-width:800px){
+        width: 65%;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        @media (max-width:800px){
+            font-size: 1.5rem;
+        }
+        @media (max-width:450px){
+            font-size: 1rem;
+        }
+    }
+    p{
+        font-size: 1rem;
+        text-align: center;
+        @media (max-width:800px){
+            font-size: 0.8rem;
+        }
+        @media (max-width:450px){
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@mixin subtitle2(){
+    padding: 2rem 0;
+    display: flex; flex-direction: column; row-gap: 1rem;
+    width: 50%;
+    @media (max-width:800px){
+        width: 65%;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        @media (max-width:800px){
+            font-size: 1.5rem;
+        }
+        @media (max-width:450px){
+            font-size: 1rem;
+        }
+    }
+    p{
+        font-size: 1rem;
+        @media (max-width:800px){
+            font-size: 0.8rem;
+        }
+        @media (max-width:450px){
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@mixin subtitle3(){
+    padding: 2rem 0;
+    display: flex; flex-direction: column; row-gap: 1rem;
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        @media (max-width:1100px){
+            font-size: 1.5rem;
+        }
+        @media (max-width:800px){
+            font-size: 1rem;
+        }
+    }
+    p{
+        font-size: 1rem;
+        @media (max-width:1100px){
+            font-size: 0.8rem;
+        }
+        @media (max-width:800px){
+            font-size: 0.6rem;
+        }
+    }
+}
